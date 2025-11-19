@@ -25,6 +25,7 @@
                     document.location.href = 'register.php';
                 </script>
             ";
+           return false;
         }
 
         // has password
