@@ -32,7 +32,7 @@
         $hasPassword = password_hash($password, PASSWORD_DEFAULT);
 
         // query data
-        $query = "INSERT INTO users VALUES ('', '$username', '$password', '$hasPassword')";
+        $query = "INSERT INTO users VALUES ('', '$username', '$email', '$hasPassword')";
         mysqli_query($conn, $query);
 
         return mysqli_affected_rows($conn);
